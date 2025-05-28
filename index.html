@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Futbol Dünyası - Modern Futbol Portalı</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animasyon Kütüphanesi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                <h1>Futbol Dünyası</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hakkimizda" class="active"><i class="fas fa-info-circle"></i> Hakkımızda</a></li>
+                    <li><a href="#galeri"><i class="fas fa-images"></i> Galeri</a></li>
+                    <li><a href="#canli-skorlar"><i class="fas fa-futbol"></i> Canlı Skorlar</a></li>
+                    <li><a href="#quiz"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                    <li><a href="#istatistikler"><i class="fas fa-chart-bar"></i> İstatistikler</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hakkimizda" data-aos="fade-up">
+            <h2><i class="fas fa-info-circle"></i> Futbol Hakkında</h2>
+            <div class="about-content">
+                <article class="about-text" data-aos="fade-right">
+                    <p>Futbol, dünya genelinde en çok oynanan ve izlenen spordur. UEFA Şampiyonlar Ligi, Avrupa'nın en prestijli turnuvasıdır. Modern futbol, teknik beceri, strateji ve fiziksel gücün mükemmel birleşimidir.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number">4 Milyar+</span>
+                            <span class="stat-label">Taraftar</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-globe"></i>
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Ülke</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-trophy"></i>
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Turnuva</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="about-features" data-aos="fade-left">
+                    <h3><i class="fas fa-trophy"></i> Önemli Turnuvalar</h3>
+                    <ul class="tournament-list">
+                        <li><i class="fas fa-star"></i> UEFA Şampiyonlar Ligi</li>
+                        <li><i class="fas fa-globe"></i> FIFA Dünya Kupası</li>
+                        <li><i class="fas fa-flag"></i> Avrupa Futbol Şampiyonası (EURO)</li>
+                        <li><i class="fas fa-crown"></i> Premier Lig</li>
+                        <li><i class="fas fa-medal"></i> La Liga</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeri" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Galeri</h2>
+                <div class="filter-buttons" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="stadiums">Stadyumlar</button>
+                    <button class="filter-btn" data-filter="players">Oyuncular</button>
+                    <button class="filter-btn" data-filter="trophies">Kupalar</button>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Stadyumlar -->
+                    <div class="gallery-item" data-category="stadiums" data-aos="fade-up">
+                        <img src="images/stadiums/ALLİANZ.jpeg" alt="Allianz Arena" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Allianz Arena</h3>
+                            <p>Münih, Almanya</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="stadiums" data-aos="fade-up">
+                        <img src="images/stadiums/campnou.jpg" alt="Camp Nou" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Camp Nou</h3>
+                            <p>Barselona, İspanya</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="stadiums" data-aos="fade-up">
+                        <img src="images/stadiums/oldtrafford.jpg" alt="Old Trafford" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Old Trafford</h3>
+                            <p>Manchester, İngiltere</p>
+                        </div>
+                    </div>
+
+                    <!-- Oyuncular -->
+                    <div class="gallery-item" data-category="players" data-aos="fade-up">
+                        <img src="images/players/messi.jpg" alt="Lionel Messi" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Lionel Messi</h3>
+                            <p>Inter Miami</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="players" data-aos="fade-up">
+                        <img src="images/players/ronaldo.jpg" alt="Cristiano Ronaldo" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Cristiano Ronaldo</h3>
+                            <p>Al Nassr</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="players" data-aos="fade-up">
+                        <img src="images/players/haaland.jpg" alt="Erling Haaland" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Erling Haaland</h3>
+                            <p>Manchester City</p>
+                        </div>
+                    </div>
+
+                    <!-- Kupalar -->
+                    <div class="gallery-item" data-category="trophies" data-aos="fade-up">
+                        <img src="images/trophies/championsleague.jpg" alt="Şampiyonlar Ligi Kupası" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Şampiyonlar Ligi Kupası</h3>
+                            <p>UEFA</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="trophies" data-aos="fade-up">
+                        <img src="images/trophies/world cup.jpg" alt="Dünya Kupası" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Dünya Kupası</h3>
+                            <p>FIFA</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="trophies" data-aos="fade-up">
+                        <img src="images/trophies/,ballondor.jpg" alt="Ballon d'Or" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Ballon d'Or</h3>
+                            <p>France Football</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="canli-skorlar" data-aos="fade-up">
+            <h2><i class="fas fa-futbol"></i> Canlı Skorlar</h2>
+            <div class="live-scores-header">
+                <div class="league-filter">
+                    <button class="league-btn active" data-league="all">Tüm Ligler</button>
+                    <button class="league-btn" data-league="champions">Şampiyonlar Ligi</button>
+                    <button class="league-btn" data-league="premier">Premier Lig</button>
+                    <button class="league-btn" data-league="laliga">La Liga</button>
+                </div>
+                <button id="refreshScores" class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i> Yenile
+                </button>
+            </div>
+            <div id="canli-skorlar-listesi">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span>Skorlar yükleniyor...</span>
+                </div>
+            </div>
+            <div id="animasyon" class="animation-section" data-aos="fade-up">
+                <h3><i class="fas fa-running"></i> Futbol Topu Animasyonu</h3>
+                <canvas id="futbol-topu-canvas" width="600" height="200"></canvas>
+            </div>
+        </section>
+
+        <section id="istatistikler" data-aos="fade-up">
+            <h2><i class="fas fa-chart-bar"></i> Futbol İstatistikleri</h2>
+            <div class="stats-container">
+                <div class="stat-card" data-aos="flip-left">
+                    <i class="fas fa-futbol"></i>
+                    <h3>En Çok Gol</h3>
+                    <div class="stat-value">805</div>
+                    <div class="stat-label">Cristiano Ronaldo</div>
+                </div>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-trophy"></i>
+                    <h3>En Çok Şampiyonlar Ligi</h3>
+                    <div class="stat-value">14</div>
+                    <div class="stat-label">Real Madrid</div>
+                </div>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-users"></i>
+                    <h3>En Büyük Stadyum</h3>
+                    <div class="stat-value">114,000</div>
+                    <div class="stat-label">Camp Nou</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="super-lig-puan-durumu" data-aos="fade-up">
+            <h2><i class="fas fa-list-ol"></i> Süper Lig Puan Durumu</h2>
+            <div id="puanTablosu" class="puan-tablosu-scroll-container">
+                <canvas id="puanDurumuCanvas" width="1200" height="1000"></canvas>
+            </div>
+            <div class="puan-tablosu-aciklama">
+                <div class="aciklama-item">
+                    <span class="renk-kutu sampiyonlar-ligi"></span>
+                    <span>Şampiyonlar Ligi (1-2. Sıra)</span>
+                </div>
+                <div class="aciklama-item">
+                    <span class="renk-kutu avrupa-ligi"></span>
+                    <span>Avrupa Ligi (3-4. Sıra)</span>
+                </div>
+                <div class="aciklama-item">
+                    <span class="renk-kutu dusme-hatti"></span>
+                    <span>Düşme Hattı (17-20. Sıra)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" data-aos="fade-up">
+            <h2><i class="fas fa-question-circle"></i> Futbol Quiz</h2>
+            <div class="quiz-container">
+                <form id="quizForm" class="quiz-form">
+                    <div class="quiz-soru" data-aos="fade-right">
+                        <label for="q1">
+                            <i class="fas fa-trophy"></i>
+                            1. UEFA Şampiyonlar Ligi kaç takımın katılımı ile oynanır?
+                        </label>
+                        <select id="q1" name="q1" required>
+                            <option value="">Seçiniz</option>
+                            <option value="32">32</option>
+                            <option value="36">36</option>
+                            <option value="24">24</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-soru" data-aos="fade-right" data-aos-delay="100">
+                        <label for="q2">
+                            <i class="fas fa-users"></i>
+                            2. Futbol maçında kaç oyuncu sahada bulunur? (Her takım için)
+                        </label>
+                        <input type="number" id="q2" name="q2" min="1" max="11" required>
+                    </div>
+
+                    <div class="quiz-soru" data-aos="fade-right" data-aos-delay="200">
+                        <label for="q3">
+                            <i class="fas fa-star"></i>
+                            3. En fazla gol atan futbolcu kimdir?
+                        </label>
+                        <textarea id="q3" name="q3" rows="2" placeholder="Cevabınızı yazınız..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-aos="zoom-in">
+                        <i class="fas fa-paper-plane"></i>
+                        Cevapları Gönder
+                    </button>
+                </form>
+                <div id="quizResult"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-info-circle"></i> Hakkımızda</h3>
+                <p>Futbol Dünyası, futbol tutkunları için en güncel haberler, canlı skorlar ve daha fazlasını sunar.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#canli-skorlar">Canlı Skorlar</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> Bizi Takip Edin</h3>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="fas fa-copyright"></i> 2024 Futbol Dünyası - Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animasyon Kütüphanesi -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./app.js"></script>
+</body>
+</html> 
